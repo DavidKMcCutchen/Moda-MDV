@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="col-50" layout="row" layout-align="center center">
+    <modafinil-modafinil-list
+      [modafinils]="allModafinils$ | async"
+      (selected)="selectModafinil($event)"
+      (deleted)="deleteModafinil($event)"
+    ></modafinil-modafinil-list>
+  </div>
+  <div class="col-50" layout="row" layout-align="center center">
+    <modafinil-modafinil-details
+      [modafinil]="selectedModafinil$ | async"
+      (saved)="saveModafinil($event)"
+      (cancelled)="cancel()"
+      [form]="form"
+    ></modafinil-modafinil-details>
+  </div>
+</div>

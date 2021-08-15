@@ -14,8 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
     "paths": {
-      "@modafinil/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@modafinil/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@modafinil/core-data": ["libs/core-data/src/index.ts"],
+      "@modafinil/material": ["libs/material/src/index.ts"],
+      "@modafinil/ui-login": ["libs/ui-login/src/index.ts"],
+      "@modafinil/core-state": ["libs/core-state/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
